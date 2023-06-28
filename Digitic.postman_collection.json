@@ -358,7 +358,22 @@
 					"name": "Get a Product",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/product/649ba488a1dc11d7d124a2d3",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"product",
+								"649ba488a1dc11d7d124a2d3"
+							]
+						}
 					},
 					"response": []
 				},
@@ -366,7 +381,21 @@
 					"name": "Get All Products",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/product",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"product"
+							]
+						}
 					},
 					"response": []
 				}
