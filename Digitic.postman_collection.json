@@ -319,6 +319,58 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Create a Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Samsung Laptod\",\r\n    \"category\":\"Laptod\",\r\n    \"brand\":\"Samsung\",\r\n    \"description\":\"hey this is apple product\",\r\n    \"price\":22500,\r\n    \"quantity\":100,\r\n    \"color\":\"yellow\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/product",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Product",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
