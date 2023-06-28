@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "2004a370-3739-4bb3-b199-c2b59e74aa6f",
+		"_postman_id": "de3d07bd-2dfc-4dc8-ac51-3b0777413e45",
 		"name": "Digitic",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "24887268"
@@ -394,6 +394,38 @@
 							"path": [
 								"api",
 								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Apple gf laptod 66\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/product/649bc10edbe53c2e23e1723d",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"product",
+								"649bc10edbe53c2e23e1723d"
 							]
 						}
 					},
