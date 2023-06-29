@@ -50,6 +50,7 @@ const getaProduct = asyncHandler(async (req, res) => {
 });
 
 const getAllProduct = asyncHandler(async (req, res) => {
+  //3:03:03
   try {
     const getallProducts = await Product.find();
     res.json(getallProducts);

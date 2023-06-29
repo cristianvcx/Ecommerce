@@ -326,6 +326,16 @@
 				{
 					"name": "Create a Product",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODAyMzU0NCwiZXhwIjoxNjg4MTA5OTQ0fQ.h_WzirBZh-cWrQXeZSBlAbV9SLOq4wdFId83zny1EEA",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -402,6 +412,16 @@
 				{
 					"name": "Update a Product",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODAyMzU0NCwiZXhwIjoxNjg4MTA5OTQ0fQ.h_WzirBZh-cWrQXeZSBlAbV9SLOq4wdFId83zny1EEA",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
@@ -414,7 +434,7 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/api/product/649bc10edbe53c2e23e1723d",
+							"raw": "127.0.0.1:5000/api/product/649b5fc1ffbed04950c50f7e",
 							"host": [
 								"127",
 								"0",
@@ -425,7 +445,7 @@
 							"path": [
 								"api",
 								"product",
-								"649bc10edbe53c2e23e1723d"
+								"649b5fc1ffbed04950c50f7e"
 							]
 						}
 					},
@@ -446,7 +466,7 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/api/product/649bc10edbe53c2e23e1723d",
+							"raw": "127.0.0.1:5000/api/product/649ba9d590fa38ec9bd8b037",
 							"host": [
 								"127",
 								"0",
@@ -457,7 +477,7 @@
 							"path": [
 								"api",
 								"product",
-								"649bc10edbe53c2e23e1723d"
+								"649ba9d590fa38ec9bd8b037"
 							]
 						}
 					},
