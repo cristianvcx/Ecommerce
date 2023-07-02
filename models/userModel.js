@@ -57,3 +57,4 @@ userSchema.methods.isPasswordMatched = async function (enteredPassword) {
 };
 //Export the model
 module.exports = mongoose.model("User", userSchema);
+//3:37:34
