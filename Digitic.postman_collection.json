@@ -331,7 +331,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODAyMzU0NCwiZXhwIjoxNjg4MTA5OTQ0fQ.h_WzirBZh-cWrQXeZSBlAbV9SLOq4wdFId83zny1EEA",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODI3MDUzOCwiZXhwIjoxNjg4MzU2OTM4fQ.DKlJCCJIXPf4U0n3k_mlmyk6VKC395mJZEnlpG-eBMM",
 									"type": "string"
 								}
 							]
@@ -340,7 +340,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\":\"Samsung Laptod\",\r\n    \"category\":\"Laptod\",\r\n    \"brand\":\"Samsung\",\r\n    \"description\":\"hey this is apple product\",\r\n    \"price\":22500,\r\n    \"quantity\":100,\r\n    \"color\":\"yellow\"\r\n}",
+							"raw": "{\r\n    \"title\":\"Apple gf laptod 66555\",\r\n    \"category\":\"Laptod\",\r\n    \"brand\":\"Samsung\",\r\n    \"description\":\"hey this is apple product\",\r\n    \"price\":22500,\r\n    \"quantity\":100,\r\n    \"color\":\"yellow\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -393,7 +393,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/api/product",
+							"raw": "127.0.0.1:5000/api/product?page=1&limit=5",
 							"host": [
 								"127",
 								"0",
@@ -404,6 +404,16 @@
 							"path": [
 								"api",
 								"product"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
 							]
 						}
 					},
