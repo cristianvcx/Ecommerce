@@ -202,6 +202,7 @@ const updatePassword = asyncHandler(async (req, res) => {
     res.json(user);
   }
 });
+//3:52:30
 module.exports = {
   createUser,
   loginUserCtrl,
