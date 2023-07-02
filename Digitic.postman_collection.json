@@ -48,7 +48,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"cristianvcx@gmail.com\",\r\n    \"password\":\"TapionClaw2023\"\r\n}",
+							"raw": "{\r\n    \"email\":\"cristianvcx@gmail.com\",\r\n    \"password\":\"TapionClaw\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
