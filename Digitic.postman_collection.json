@@ -326,7 +326,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODI3ODg2MSwiZXhwIjoxNjg4MzY1MjYxfQ.Rz_UMqWqDtfMfpPliETZCwFPMVcDuTxQDLjoapD3OAI",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODI4MDAyMiwiZXhwIjoxNjg4MzY2NDIyfQ.u0X6bquJlB_Iz74sx8MWJeZ5NGsRg_UOQG0vnnbhOlk",
 									"type": "string"
 								}
 							]
@@ -335,7 +335,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"password\":\"TapionClaw2023\"\r\n}",
+							"raw": "{\r\n    \"password\":\"TapionClaw\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
