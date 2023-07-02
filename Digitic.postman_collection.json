@@ -48,7 +48,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"cristianvcx@gmail.com\",\r\n    \"password\":\"tapionvcx\"\r\n}",
+							"raw": "{\r\n    \"email\":\"cristianvcx@gmail.com\",\r\n    \"password\":\"TapionClaw2023\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -313,6 +313,48 @@
 								"api",
 								"user",
 								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODI3ODg2MSwiZXhwIjoxNjg4MzY1MjYxfQ.Rz_UMqWqDtfMfpPliETZCwFPMVcDuTxQDLjoapD3OAI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"TapionClaw2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/user/password",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"password"
 							]
 						}
 					},
