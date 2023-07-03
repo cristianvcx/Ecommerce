@@ -48,7 +48,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"cristianvcx@gmail.com\",\r\n    \"password\":\"TapionClaw\"\r\n}",
+							"raw": "{\r\n    \"email\":\"cristianvcx188@gmail.com\",\r\n    \"password\":\"TapionClaw2023\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -68,6 +68,38 @@
 								"api",
 								"user",
 								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\": \"cristian\",\r\n    \"lastname\": \"villalobos\",\r\n    \"email\": \"cristianvcx188@gmail.com\",\r\n    \"mobile\": \"944121249\",\r\n    \"password\":\"TapionClaw\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/user/forgot-password-token",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"forgot-password-token"
 							]
 						}
 					},
@@ -160,7 +192,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTdjMzk0OTBhYzY2NmQxMDI0N2U3NCIsImlhdCI6MTY4NzY2NzY1NiwiZXhwIjoxNjg3OTI2ODU2fQ.SXckbw-_rtxXGAeaNhuImuc3DSVJGREPIHsbz1XuYxc",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODM2MDUzMiwiZXhwIjoxNjg4NDQ2OTMyfQ.c3BnPX-XVZAoQS_tk5hA6aLrDTq23II0dKxgAj9emnw",
 									"type": "string"
 								}
 							]
@@ -169,7 +201,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"firstname\":\"cristian andres\",\r\n    \"lastname\":\"villalobos farias\",\r\n    \"email\":\"cristianvcx@gmail.com\",\r\n    \"mobile\":\"56944121249\"\r\n}",
+							"raw": "{\r\n    \"firstname\":\"cristian andres\",\r\n    \"lastname\":\"villalobos farias\",\r\n    \"email\":\"cristianvcx188@gmail.com\",\r\n    \"mobile\":\"56944121249\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -355,6 +387,37 @@
 								"api",
 								"user",
 								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"cristianvcx188@gmail.com\",\r\n    \"password\":\"TapionClaw2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/user/reset-password/de90044303e687da7d9e733c316c362af7db91f9e47b5dc0632e7dd53f1de2f0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"reset-password",
+								"de90044303e687da7d9e733c316c362af7db91f9e47b5dc0632e7dd53f1de2f0"
 							]
 						}
 					},
