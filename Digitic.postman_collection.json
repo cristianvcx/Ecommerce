@@ -24,17 +24,11 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/api/user/register",
+							"raw": "{{base_url}}user/register",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}user"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"user",
 								"register"
 							]
 						}
@@ -56,17 +50,11 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/api/user/login",
+							"raw": "{{base_url}}user/login",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}user"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"user",
 								"login"
 							]
 						}
@@ -88,17 +76,11 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/api/user/forgot-password-token",
+							"raw": "{{base_url}}user/forgot-password-token",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}user"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"user",
 								"forgot-password-token"
 							]
 						}
@@ -111,17 +93,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/api/user/all-users",
+							"raw": "{{base_url}}user/all-users",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}user"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"user",
 								"all-users"
 							]
 						}
@@ -144,17 +120,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/api/user/6497b78692b63bca395808df",
+							"raw": "{{base_url}}user/6497b78692b63bca395808df",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}user"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"user",
 								"6497b78692b63bca395808df"
 							]
 						}
@@ -167,17 +137,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/api/user/64951c8a5e29a815de903c43",
+							"raw": "{{base_url}}user/64951c8a5e29a815de903c43",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}user"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"user",
 								"64951c8a5e29a815de903c43"
 							]
 						}
@@ -209,17 +173,11 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/api/user/edit-user",
+							"raw": "{{base_url}}user/edit-user",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}user"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"user",
 								"edit-user"
 							]
 						}
@@ -242,17 +200,11 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/api/user/block-user/6498943f6243cea4723dc475",
+							"raw": "{{base_url}}user/block-user/6498943f6243cea4723dc475",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}user"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"user",
 								"block-user",
 								"6498943f6243cea4723dc475"
 							]
@@ -276,17 +228,11 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/api/user/unblock-user/6498943f6243cea4723dc475",
+							"raw": "{{base_url}}user/unblock-user/6498943f6243cea4723dc475",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}user"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"user",
 								"unblock-user",
 								"6498943f6243cea4723dc475"
 							]
@@ -310,17 +256,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/api/user/refresh",
+							"raw": "{{base_url}}user/refresh",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}user"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"user",
 								"refresh"
 							]
 						}
@@ -333,17 +273,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/api/user/logout",
+							"raw": "{{base_url}}user/logout",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}user"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"user",
 								"logout"
 							]
 						}
@@ -375,17 +309,11 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/api/user/password",
+							"raw": "{{base_url}}user/password",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}user"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"user",
 								"password"
 							]
 						}
@@ -407,15 +335,11 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/user/reset-password/de90044303e687da7d9e733c316c362af7db91f9e47b5dc0632e7dd53f1de2f0",
-							"protocol": "http",
+							"raw": "{{base_url}}user/reset-password/de90044303e687da7d9e733c316c362af7db91f9e47b5dc0632e7dd53f1de2f0",
 							"host": [
-								"localhost"
+								"{{base_url}}user"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"user",
 								"reset-password",
 								"de90044303e687da7d9e733c316c362af7db91f9e47b5dc0632e7dd53f1de2f0"
 							]
@@ -453,17 +377,9 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/api/product",
+							"raw": "{{base_url}}product",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"api",
-								"product"
+								"{{base_url}}product"
 							]
 						}
 					},
@@ -475,17 +391,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/api/product/649ba488a1dc11d7d124a2d3",
+							"raw": "{{base_url}}product/649ba488a1dc11d7d124a2d3",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}product"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"product",
 								"649ba488a1dc11d7d124a2d3"
 							]
 						}
@@ -498,17 +408,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/api/product?page=1&limit=5",
+							"raw": "{{base_url}}product?page=1&limit=5",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"api",
-								"product"
+								"{{base_url}}product"
 							],
 							"query": [
 								{
@@ -549,17 +451,11 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/api/product/649b5fc1ffbed04950c50f7e",
+							"raw": "{{base_url}}product/649b5fc1ffbed04950c50f7e",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}product"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"product",
 								"649b5fc1ffbed04950c50f7e"
 							]
 						}
@@ -581,18 +477,106 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/api/product/649ba9d590fa38ec9bd8b037",
+							"raw": "{{base_url}}product/649ba9d590fa38ec9bd8b037",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}product"
 							],
-							"port": "5000",
 							"path": [
-								"api",
-								"product",
 								"649ba9d590fa38ec9bd8b037"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blog",
+			"item": [
+				{
+					"name": "Create a Blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODQ0NzE3MywiZXhwIjoxNjg4NTMzNTczfQ.5hFKEkg4QM1WZyisccypxp5AwviUOu5xfCY7m-T-bGs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"My blog 4\",\r\n    \"category\":\"Travel\",\r\n    \"description\":\"My blog description 4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}blog/",
+							"host": [
+								"{{base_url}}blog"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODQ0NzE3MywiZXhwIjoxNjg4NTMzNTczfQ.5hFKEkg4QM1WZyisccypxp5AwviUOu5xfCY7m-T-bGs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"My updated blog 4\",\r\n    \"category\":\"Travel\",\r\n    \"description\":\"My update blog description 4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}blog/64a3a9e5d2e7b6c3b376d40a",
+							"host": [
+								"{{base_url}}blog"
+							],
+							"path": [
+								"64a3a9e5d2e7b6c3b376d40a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Blog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}blog/64a3a9e5d2e7b6c3b376d40a",
+							"host": [
+								"{{base_url}}blog"
+							],
+							"path": [
+								"64a3a9e5d2e7b6c3b376d40a"
 							]
 						}
 					},
