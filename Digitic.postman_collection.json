@@ -571,12 +571,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}blog/64a3a9e5d2e7b6c3b376d40a",
+							"raw": "{{base_url}}blog/64a3a8fe28f9eb55038589c7",
 							"host": [
 								"{{base_url}}blog"
 							],
 							"path": [
-								"64a3a9e5d2e7b6c3b376d40a"
+								"64a3a8fe28f9eb55038589c7"
 							]
 						}
 					},
@@ -634,7 +634,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODc5NTQ3MiwiZXhwIjoxNjg4ODgxODcyfQ.MSYw5jmhoYgiqP5G9moeujkko6aDuj6y090xSUptSgI",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODg0MTE2OCwiZXhwIjoxNjg4OTI3NTY4fQ.NCjeuYjQL_BbC-MsY4Q754ND4M3cf4LNsDv8HXum3n8",
 									"type": "string"
 								}
 							]
@@ -657,6 +657,42 @@
 							],
 							"path": [
 								"likes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dislike the blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODg0MTE2OCwiZXhwIjoxNjg4OTI3NTY4fQ.NCjeuYjQL_BbC-MsY4Q754ND4M3cf4LNsDv8HXum3n8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"blogId\":\"64a3a8fe28f9eb55038589c7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}blog/dislikes",
+							"host": [
+								"{{base_url}}blog"
+							],
+							"path": [
+								"dislikes"
 							]
 						}
 					},
