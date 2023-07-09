@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 4000;
 const authRouter = require("./routes/authRoute");
 const productRouter = require("./routes/productRoute");
 const blogRouter = require("./routes/blogRoute");
-const categoryRouter = require("./routes/categoryRoute");
+const categoryRouter = require("./routes/prodcategoryRoute");
 const cookieParser = require("cookie-parser");
 const morgan = require("morgan");
 dbConnect();

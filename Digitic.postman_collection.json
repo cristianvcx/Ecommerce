@@ -701,7 +701,7 @@
 			]
 		},
 		{
-			"name": "Category",
+			"name": "Prod Category",
 			"item": [
 				{
 					"name": "Add Category",
@@ -731,6 +731,69 @@
 							"raw": "{{base_url}}category",
 							"host": [
 								"{{base_url}}category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODg2ODQzMCwiZXhwIjoxNjg4OTU0ODMwfQ.UkGU2nyfIRl--ekwKEwZWIDVn5TNUPyqhuKMk1pXR-s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Tv\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}category/64aa3634f750d6180d5b3d46",
+							"host": [
+								"{{base_url}}category"
+							],
+							"path": [
+								"64aa3634f750d6180d5b3d46"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODg2ODQzMCwiZXhwIjoxNjg4OTU0ODMwfQ.UkGU2nyfIRl--ekwKEwZWIDVn5TNUPyqhuKMk1pXR-s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}category/64aa3634f750d6180d5b3d46",
+							"host": [
+								"{{base_url}}category"
+							],
+							"path": [
+								"64aa3634f750d6180d5b3d46"
 							]
 						}
 					},
