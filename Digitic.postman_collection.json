@@ -711,7 +711,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODg2ODQzMCwiZXhwIjoxNjg4OTU0ODMwfQ.UkGU2nyfIRl--ekwKEwZWIDVn5TNUPyqhuKMk1pXR-s",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4ODk1NzQzNywiZXhwIjoxNjg5MDQzODM3fQ.mMDBqPrqpUF3dmLxjdxWZoQxZeUOB2A6AogNXuRhwAE",
 									"type": "string"
 								}
 							]
@@ -720,7 +720,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\":\"Watch\"\r\n}",
+							"raw": "{\r\n    \"title\":\"Tv\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
