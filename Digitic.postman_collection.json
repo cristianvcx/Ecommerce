@@ -798,6 +798,23 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}category/64ab59f59c14adea886e7900",
+							"host": [
+								"{{base_url}}category"
+							],
+							"path": [
+								"64ab59f59c14adea886e7900"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
