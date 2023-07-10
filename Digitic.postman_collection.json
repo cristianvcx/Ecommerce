@@ -815,6 +815,20 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get all Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}category",
+							"host": [
+								"{{base_url}}category"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
