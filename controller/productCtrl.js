@@ -97,6 +97,9 @@ const getAllProduct = asyncHandler(async (req, res) => {
     throw new Error(error);
   }
 });
+
+//5:54:07
+
 module.exports = {
   createProduct,
   getaProduct,

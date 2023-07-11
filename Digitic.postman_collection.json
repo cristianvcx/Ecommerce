@@ -831,6 +831,273 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Blog Category",
+			"item": [
+				{
+					"name": "Add Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTEwMDYyNCwiZXhwIjoxNjg5MTg3MDI0fQ.XbQeHggyjrntwXjo4BEhHi7h_JadHALZwsAZyn_rNbk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Watch\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}blogcategory",
+							"host": [
+								"{{base_url}}blogcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTEwMDYyNCwiZXhwIjoxNjg5MTg3MDI0fQ.XbQeHggyjrntwXjo4BEhHi7h_JadHALZwsAZyn_rNbk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Watch 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}blogcategory/64ada1a6c2a92295528e6d7e",
+							"host": [
+								"{{base_url}}blogcategory"
+							],
+							"path": [
+								"64ada1a6c2a92295528e6d7e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTEwMDYyNCwiZXhwIjoxNjg5MTg3MDI0fQ.XbQeHggyjrntwXjo4BEhHi7h_JadHALZwsAZyn_rNbk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}blogcategory/64ada1a6c2a92295528e6d7e",
+							"host": [
+								"{{base_url}}blogcategory"
+							],
+							"path": [
+								"64ada1a6c2a92295528e6d7e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}blogcategory/64ada16fc2a92295528e6d7a",
+							"host": [
+								"{{base_url}}blogcategory"
+							],
+							"path": [
+								"64ada16fc2a92295528e6d7a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}blogcategory",
+							"host": [
+								"{{base_url}}blogcategory"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "Add Brand",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTEwMDYyNCwiZXhwIjoxNjg5MTg3MDI0fQ.XbQeHggyjrntwXjo4BEhHi7h_JadHALZwsAZyn_rNbk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Lenovo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}brand/",
+							"host": [
+								"{{base_url}}brand"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Brand",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTEwMDYyNCwiZXhwIjoxNjg5MTg3MDI0fQ.XbQeHggyjrntwXjo4BEhHi7h_JadHALZwsAZyn_rNbk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Updated Lenovo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}brand/64ade659af319dd1039e3c59",
+							"host": [
+								"{{base_url}}brand"
+							],
+							"path": [
+								"64ade659af319dd1039e3c59"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Brand",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTEwMDYyNCwiZXhwIjoxNjg5MTg3MDI0fQ.XbQeHggyjrntwXjo4BEhHi7h_JadHALZwsAZyn_rNbk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}brand/64ade659af319dd1039e3c59",
+							"host": [
+								"{{base_url}}brand"
+							],
+							"path": [
+								"64ade659af319dd1039e3c59"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Brand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}brand/64ade57daf319dd1039e3c55",
+							"host": [
+								"{{base_url}}brand"
+							],
+							"path": [
+								"64ade57daf319dd1039e3c55"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Brand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}brand",
+							"host": [
+								"{{base_url}}brand"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
