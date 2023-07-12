@@ -97,9 +97,16 @@ const getAllProduct = asyncHandler(async (req, res) => {
     throw new Error(error);
   }
 });
-
-//5:54:07
-
+const addToWishlist = asyncHandler(async (req, res) => {
+  const { _id } = req.user;
+  const { prodId } = req.body;
+  try {
+    const user = User.findById(_id);
+    const alreadyadded = user.widhList;
+  } catch (error) {
+    throw new Error(error);
+  }
+});
 module.exports = {
   createProduct,
   getaProduct,

@@ -54,6 +54,6 @@ var productSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-
+//5:47:20
 //Export the model
 module.exports = mongoose.model("Product", productSchema);
