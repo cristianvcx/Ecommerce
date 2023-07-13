@@ -51,6 +51,10 @@ var productSchema = new mongoose.Schema(
         postedby: { type: mongoose.Schema.Types.ObjectId, red: "User" },
       },
     ],
+    totalrating: {
+      type: String,
+      default: 0,
+    },
   },
   { timestamps: true }
 );
