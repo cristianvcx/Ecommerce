@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"firstname\":\"cristian\",\r\n    \"lastname\":\"villalobos\",\r\n    \"email\":\"cristianvcx@gmail.com\",\r\n    \"mobile\":\"944121249\",\r\n    \"password\":\"tapionvcx\"\r\n}",
+							"raw": "{\r\n    \"firstname\":\"Navdeep\",\r\n    \"lastname\":\"Dahiya\",\r\n    \"email\":\"pruebavcx01@gmail.com\",\r\n    \"mobile\":\"1234567890\",\r\n    \"password\":\"tapionvcx123\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -42,7 +42,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"cristianvcx188@gmail.com\",\r\n    \"password\":\"TapionClaw2023\"\r\n}",
+							"raw": "{\r\n    \"email\":\"pruebavcx01@gmail.com\",\r\n    \"password\":\"tapionvcx123\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -327,7 +327,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"cristianvcx188@gmail.com\",\r\n    \"password\":\"TapionClaw2023\"\r\n}",
+							"raw": "{\r\n    \"email\":\"cristianvcx188@gmail.com\",\r\n    \"password\":\"TapionClaw\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -335,13 +335,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}user/reset-password/de90044303e687da7d9e733c316c362af7db91f9e47b5dc0632e7dd53f1de2f0",
+							"raw": "{{base_url}}user/reset-password/3d7a72a6b28820619f1fbc31fe06b60bc4457532992a137c7e6b7d5631e3e39b",
 							"host": [
 								"{{base_url}}user"
 							],
 							"path": [
 								"reset-password",
-								"de90044303e687da7d9e733c316c362af7db91f9e47b5dc0632e7dd53f1de2f0"
+								"3d7a72a6b28820619f1fbc31fe06b60bc4457532992a137c7e6b7d5631e3e39b"
 							]
 						}
 					},
@@ -496,7 +496,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTIwMzUwMCwiZXhwIjoxNjg5Mjg5OTAwfQ.4Q4CFiEBU1tMpwNB8eOmkFEinGJcgRecDWU0stV2QC8",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjBkOWNiYmYxMmVhYWY0ZmM2ZDFiNiIsImlhdCI6MTY4OTMxMTcyNSwiZXhwIjoxNjg5Mzk4MTI1fQ.1YvV7pf3Cp2t-Kfe0dR8MYTAqfEOBP3hSc73RVv1QjU",
 									"type": "string"
 								}
 							]
@@ -505,7 +505,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"prodId\":\"649e3ca6fb31998c470bfd57\"\r\n}",
+							"raw": "{\r\n    \"prodId\":\"64a0f6e2e6c8731c5a6f1728\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -519,6 +519,42 @@
 							],
 							"path": [
 								"wishlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rating",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjBkOWNiYmYxMmVhYWY0ZmM2ZDFiNiIsImlhdCI6MTY4OTMxNjAwNywiZXhwIjoxNjg5NDAyNDA3fQ.xj9ZBksjhwq_FOK-RX4zUPHAjRA7YlruQyJ0OxSyqCQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"star\":\"5\",\r\n    \"prodId\":\"649e3ca6fb31998c470bfd57\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}product/rating",
+							"host": [
+								"{{base_url}}product"
+							],
+							"path": [
+								"rating"
 							]
 						}
 					},

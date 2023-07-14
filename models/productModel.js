@@ -48,6 +48,7 @@ var productSchema = new mongoose.Schema(
     ratings: [
       {
         star: Number,
+        //6::13:11
         postedby: { type: mongoose.Schema.Types.ObjectId, red: "User" },
       },
     ],
@@ -58,6 +59,6 @@ var productSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-//5:47:20
+
 //Export the model
 module.exports = mongoose.model("Product", productSchema);
