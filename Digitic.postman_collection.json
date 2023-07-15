@@ -1170,6 +1170,74 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Coupon",
+			"item": [
+				{
+					"name": "Create Coupon",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTQwMTUzNCwiZXhwIjoxNjg5NDg3OTM0fQ.kaEQrxEFVsPjyL6GJ7uaKtASz2NBNFRvc4VhxtJX4rQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"HOLI123\",\r\n    \"expiry\":\"Tue, 18 Jul 2023 06:12:13 GMT\",\r\n    \"discount\":40\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}coupon/",
+							"host": [
+								"{{base_url}}coupon"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Coupon",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTQwMTUzNCwiZXhwIjoxNjg5NDg3OTM0fQ.kaEQrxEFVsPjyL6GJ7uaKtASz2NBNFRvc4VhxtJX4rQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}coupon/",
+							"host": [
+								"{{base_url}}coupon"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
