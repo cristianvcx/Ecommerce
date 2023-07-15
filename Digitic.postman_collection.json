@@ -42,7 +42,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"pruebavcx01@gmail.com\",\r\n    \"password\":\"tapionvcx123\"\r\n}",
+							"raw": "{\r\n    \"email\":\"cristianvcx188@gmail.com\",\r\n    \"password\":\"TapionClaw\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -391,12 +391,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}product/649ba488a1dc11d7d124a2d3",
+							"raw": "{{base_url}}product/649e3ca6fb31998c470bfd57",
 							"host": [
 								"{{base_url}}product"
 							],
 							"path": [
-								"649ba488a1dc11d7d124a2d3"
+								"649e3ca6fb31998c470bfd57"
 							]
 						}
 					},
@@ -532,7 +532,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjBkOWNiYmYxMmVhYWY0ZmM2ZDFiNiIsImlhdCI6MTY4OTMxNjAwNywiZXhwIjoxNjg5NDAyNDA3fQ.xj9ZBksjhwq_FOK-RX4zUPHAjRA7YlruQyJ0OxSyqCQ",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTM4MTU4NCwiZXhwIjoxNjg5NDY3OTg0fQ.3rDPT23y6ArFeMtt1aknBDCIU8EtVJl7ZMrmX5lNCOc",
 									"type": "string"
 								}
 							]
@@ -541,7 +541,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"star\":\"5\",\r\n    \"prodId\":\"649e3ca6fb31998c470bfd57\"\r\n}",
+							"raw": "{\r\n    \"star\":\"5\",\r\n    \"comment\":\"hey my new product is awesome\",\r\n    \"prodId\":\"649e3ca6fb31998c470bfd57\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
