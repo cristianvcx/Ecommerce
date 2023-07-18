@@ -442,13 +442,8 @@
 						"method": "PUT",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"title\":\"Apple gf laptod 66\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"mode": "formdata",
+							"formdata": []
 						},
 						"url": {
 							"raw": "{{base_url}}product/649b5fc1ffbed04950c50f7e",
@@ -555,6 +550,49 @@
 							],
 							"path": [
 								"rating"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Product Imagen",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTY5Mjk4MSwiZXhwIjoxNjg5Nzc5MzgxfQ.lwTBwQa8-ZBdWIeX9gqmejqciinsgtWmhAMrXuM3L-c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/cristian/Pictures/garra.png"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/cristian/Pictures/garra1.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}product/upload/64a0f6e2e6c8731c5a6f1728",
+							"host": [
+								"{{base_url}}product"
+							],
+							"path": [
+								"upload",
+								"64a0f6e2e6c8731c5a6f1728"
 							]
 						}
 					},
@@ -765,6 +803,50 @@
 							],
 							"path": [
 								"dislikes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Blog Imagen",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTY5Mjk4MSwiZXhwIjoxNjg5Nzc5MzgxfQ.lwTBwQa8-ZBdWIeX9gqmejqciinsgtWmhAMrXuM3L-c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/cristian/Downloads/images-1671253022462-957061926.jpeg"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}blog/upload/64a3a8fe28f9eb55038589c7",
+							"host": [
+								"{{base_url}}blog"
+							],
+							"path": [
+								"upload",
+								"64a3a8fe28f9eb55038589c7"
 							]
 						}
 					},
@@ -1218,7 +1300,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTQwMTUzNCwiZXhwIjoxNjg5NDg3OTM0fQ.kaEQrxEFVsPjyL6GJ7uaKtASz2NBNFRvc4VhxtJX4rQ",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTYwMzk2MywiZXhwIjoxNjg5NjkwMzYzfQ.TRsbPbCHVY-_a1y-qs0ODtNh4Nu3uS-sAojhCXwpFe4",
 									"type": "string"
 								}
 							]
@@ -1232,6 +1314,69 @@
 							],
 							"path": [
 								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Coupon",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTYwMzk2MywiZXhwIjoxNjg5NjkwMzYzfQ.TRsbPbCHVY-_a1y-qs0ODtNh4Nu3uS-sAojhCXwpFe4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Sonic\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}coupon/64b23a5840f765dbb88ffd17",
+							"host": [
+								"{{base_url}}coupon"
+							],
+							"path": [
+								"64b23a5840f765dbb88ffd17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Coupon",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTYwMzk2MywiZXhwIjoxNjg5NjkwMzYzfQ.TRsbPbCHVY-_a1y-qs0ODtNh4Nu3uS-sAojhCXwpFe4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}coupon/64b23a5840f765dbb88ffd17",
+							"host": [
+								"{{base_url}}coupon"
+							],
+							"path": [
+								"64b23a5840f765dbb88ffd17"
 							]
 						}
 					},
