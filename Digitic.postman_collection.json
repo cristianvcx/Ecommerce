@@ -354,7 +354,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"monud0232@gmail.com\",\r\n    \"password\":\"abc12345\"\r\n}",
+							"raw": "{\r\n    \"email\":\"cristianvcx188@gmail.com\",\r\n    \"password\":\"TapionClaw\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -368,6 +368,69 @@
 							],
 							"path": [
 								"admin-login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Wishlist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTc4MzgxMCwiZXhwIjoxNjg5ODcwMjEwfQ._c-7r0xgVQfxzMhfkx5q7MaXdDhoi5s56bXffXRlGcg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/wishlist",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"wishlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save User Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTc4MzgxMCwiZXhwIjoxNjg5ODcwMjEwfQ._c-7r0xgVQfxzMhfkx5q7MaXdDhoi5s56bXffXRlGcg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"address\":\"My Address\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}user/save-address",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"save-address"
 							]
 						}
 					},
