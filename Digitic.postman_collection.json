@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"firstname\":\"Navdeep\",\r\n    \"lastname\":\"Dahiya\",\r\n    \"email\":\"pruebavcx01@gmail.com\",\r\n    \"mobile\":\"1234567890\",\r\n    \"password\":\"tapionvcx123\"\r\n}",
+							"raw": "{\r\n    \"firstname\":\"Monu\",\r\n    \"lastname\":\"Dahiya\",\r\n    \"email\":\"monud0232@gmail.com\",\r\n    \"mobile\":\"9234567890\",\r\n    \"password\":\"abc1234\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -342,6 +342,32 @@
 							"path": [
 								"reset-password",
 								"3d7a72a6b28820619f1fbc31fe06b60bc4457532992a137c7e6b7d5631e3e39b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"monud0232@gmail.com\",\r\n    \"password\":\"abc12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}user/admin-login",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"admin-login"
 							]
 						}
 					},
