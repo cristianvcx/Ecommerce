@@ -435,6 +435,42 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Add to Cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTg5OTU3MCwiZXhwIjoxNjg5OTg1OTcwfQ.-FHxqmlLphdZAZZ0wuxkidf5HJ3ERs58iHjA910efoo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cart\":[\r\n        {\r\n            \"_id\":\"649d353ca45e8c53e39bd5e8\",\r\n            \"count\":3,\r\n            \"color\": \"yellow\"\r\n        },\r\n        {\r\n            \"_id\":\"649e3bd4fb31998c470bfd4f\",\r\n            \"count\":3,\r\n            \"color\":\"red\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}user/cart",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"cart"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -497,19 +533,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}product?page=1&limit=5",
+							"raw": "{{base_url}}product",
 							"host": [
 								"{{base_url}}product"
-							],
-							"query": [
-								{
-									"key": "page",
-									"value": "1"
-								},
-								{
-									"key": "limit",
-									"value": "5"
-								}
 							]
 						}
 					},
