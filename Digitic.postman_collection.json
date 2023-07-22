@@ -42,7 +42,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"cristianvcx188@gmail.com\",\r\n    \"password\":\"TapionClaw\"\r\n}",
+							"raw": "{\r\n    \"email\":\"monud01234@gmail.com\",\r\n    \"password\":\"abc1234\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -444,7 +444,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTg5OTU3MCwiZXhwIjoxNjg5OTg1OTcwfQ.-FHxqmlLphdZAZZ0wuxkidf5HJ3ERs58iHjA910efoo",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTk2Mzk0OCwiZXhwIjoxNjkwMDUwMzQ4fQ.0HWAxdYYD39bL7PwM7fW8dITuRDrrT8xcWF6vvRG3is",
 									"type": "string"
 								}
 							]
@@ -467,6 +467,97 @@
 							],
 							"path": [
 								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTk2Mzk0OCwiZXhwIjoxNjkwMDUwMzQ4fQ.0HWAxdYYD39bL7PwM7fW8dITuRDrrT8xcWF6vvRG3is",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/cart",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Empty Cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTk2Mzk0OCwiZXhwIjoxNjkwMDUwMzQ4fQ.0HWAxdYYD39bL7PwM7fW8dITuRDrrT8xcWF6vvRG3is",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/empty-cart",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"empty-cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apply coupon",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTk2Mzk0OCwiZXhwIjoxNjkwMDUwMzQ4fQ.0HWAxdYYD39bL7PwM7fW8dITuRDrrT8xcWF6vvRG3is",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"coupon\":\"HOLI123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}user/cart/applycoupon",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"cart",
+								"applycoupon"
 							]
 						}
 					},
