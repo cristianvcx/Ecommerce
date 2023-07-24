@@ -451,7 +451,9 @@ const getOrders = asyncHandler(async (req, res) => {
   }
 });
 
-const updateOrderStatus = asyncHandler(async (req, res) => {});
+const updateOrderStatus = asyncHandler(async (req, res) => {
+  //8:40:09
+});
 
 module.exports = {
   createUser,
