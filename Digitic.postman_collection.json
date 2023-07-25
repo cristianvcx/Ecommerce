@@ -608,7 +608,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY5MDE0NDU2MSwiZXhwIjoxNjkwMjMwOTYxfQ.WZEZ1zk7TQnsbJMMy4aQUBGhnL2Vdz4G0GVqky-789E",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY5MDI0NTA5NiwiZXhwIjoxNjkwMzMxNDk2fQ.4H5Os3REojEEljmnsshFbEQKeqLh93mSen9CfBTBF7Y",
 									"type": "string"
 								}
 							]
@@ -622,6 +622,44 @@
 							],
 							"path": [
 								"get-orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updated Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY5MDI0NTA5NiwiZXhwIjoxNjkwMzMxNDk2fQ.4H5Os3REojEEljmnsshFbEQKeqLh93mSen9CfBTBF7Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"Processing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}user/order/update-order/64bd921e53c06fd743b4ca6a",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"order",
+								"update-order",
+								"64bd921e53c06fd743b4ca6a"
 							]
 						}
 					},
