@@ -871,7 +871,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY4OTY5Mjk4MSwiZXhwIjoxNjg5Nzc5MzgxfQ.lwTBwQa8-ZBdWIeX9gqmejqciinsgtWmhAMrXuM3L-c",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY5MDM5Mjk5MiwiZXhwIjoxNjkwNDc5MzkyfQ.zi9BF703-UAoAyMxIDnivGIebH5ekfdrcHNYA7HH-_0",
 									"type": "string"
 								}
 							]
@@ -884,23 +884,52 @@
 								{
 									"key": "images",
 									"type": "file",
-									"src": "/C:/Users/cristian/Pictures/garra.png"
+									"src": "/C:/Users/cristian/Pictures/garra1.png"
 								},
 								{
 									"key": "images",
 									"type": "file",
-									"src": "/C:/Users/cristian/Pictures/garra1.png"
+									"src": [],
+									"disabled": true
 								}
 							]
 						},
 						"url": {
-							"raw": "{{base_url}}product/upload/64a0f6e2e6c8731c5a6f1728",
+							"raw": "{{base_url}}product/upload/",
 							"host": [
 								"{{base_url}}product"
 							],
 							"path": [
 								"upload",
-								"64a0f6e2e6c8731c5a6f1728"
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Image",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY5MDM5Mjk5MiwiZXhwIjoxNjkwNDc5MzkyfQ.zi9BF703-UAoAyMxIDnivGIebH5ekfdrcHNYA7HH-_0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}product/delete-img/lr7r585agnckrwnusuvf",
+							"host": [
+								"{{base_url}}product"
+							],
+							"path": [
+								"delete-img",
+								"lr7r585agnckrwnusuvf"
 							]
 						}
 					},
@@ -1686,6 +1715,138 @@
 							],
 							"path": [
 								"64c159f1cc0f99b8152e552c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Enquiry",
+			"item": [
+				{
+					"name": "Add Enquiry",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY5MDQ4NzI2MywiZXhwIjoxNjkwNTczNjYzfQ.UBO6CIDsa5ZKlSBSNnfhEA3pVKpW233AYZNt4wPzhcw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Samsung\",\r\n    \"email\":\"nd@gmail.com\",\r\n    \"mobile\":\"8264954234\",\r\n    \"comment\":\"fsfsfs fsf fsfsfs\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}enquiry",
+							"host": [
+								"{{base_url}}enquiry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Enquiry",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY5MDQ4NzI2MywiZXhwIjoxNjkwNTczNjYzfQ.UBO6CIDsa5ZKlSBSNnfhEA3pVKpW233AYZNt4wPzhcw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"Contacted\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}enquiry/64c2e444c428fb4e727cb405",
+							"host": [
+								"{{base_url}}enquiry"
+							],
+							"path": [
+								"64c2e444c428fb4e727cb405"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Enquiry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}enquiry/64c2e444c428fb4e727cb405",
+							"host": [
+								"{{base_url}}enquiry"
+							],
+							"path": [
+								"64c2e444c428fb4e727cb405"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Enquiry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}enquiry",
+							"host": [
+								"{{base_url}}enquiry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Enquiry",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NDNmNjI0M2NlYTQ3MjNkYzQ3NSIsImlhdCI6MTY5MDQ4NzI2MywiZXhwIjoxNjkwNTczNjYzfQ.UBO6CIDsa5ZKlSBSNnfhEA3pVKpW233AYZNt4wPzhcw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}enquiry/64c2e444c428fb4e727cb405",
+							"host": [
+								"{{base_url}}enquiry"
+							],
+							"path": [
+								"64c2e444c428fb4e727cb405"
 							]
 						}
 					},
